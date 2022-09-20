@@ -1,0 +1,103 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+article {
+    padding: 2em;
+}
+
+img {
+    max-width: 50%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.price p {
+    text-decoration: line-through;
+}
+
+h2 {
+    color: hsl(158, 36%, 37%);
+}
+
+button {
+    border: none;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    width: 100%;
+    padding: 1em 0;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, .price h2{
+    font-family: 'Fraunces', serif;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1em;
+}
+
+.price h2 {
+    font-size: 2.2rem;
+}
+
+h3, p {
+    font-weight: 500;
+}
+
+h3 {
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: 0.875rem;
+}
+
+.price p {
+    margin-left: 20px;
+}
+
+p {
+    line-height: 1.5em;
+    font-size: 0.875rem;
+}
+
+button:hover {
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
+}
+
+@media (max-width: 500px){
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        max-width: 100%;
+        height: 300px;
+        border-radius: 10px 10px 0 0;
+    }
+}
